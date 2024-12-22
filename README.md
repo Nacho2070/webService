@@ -1,32 +1,34 @@
-## Execute with docker
+## Ejecutar con Docker
 
 ---
-### 1. Pull the image:
+### 1. Descargar la imagen:
 - docker pull nacho2070/webservice-app:latest
-### 2. Run the image:
+### 2. Ejecutar la imgaen:
 - docker run -d -p 8080:8080 nacho2070/webservice-app:latest
-### 3. Test the Endpoints
-- Once the container is running, you can test the endpoints of the web service by sending requests to :
+### 3. Probar los Endpoints
+- Una vez que el contenedor esté en ejecución, probar los endpoints del servicio web enviando solicitudes a:
   http://localhost:8080/
 ---
-## Execute locally
-### Prerequisites:
-1. Ensure you have **Java 17** or a compatible version installed.
-2. Ensure you have **Maven** installed.
-3. Clone the repository:
+## Ejecutar localmente
+### Requisitos:
+1. Asegúrate de tener instalada la versión Java 17 o una compatible.
+2. Asegúrate de tener instalado Maven.
+3. Clonar el repositorio:
    ```bash
    git clone https://github.com/your-repo/webservice-app.git
 ---
+4. Abrir el proyecto en IDE (como IntelliJ IDEA o Eclipse).
+5. Ejecutar metodo main en clase WebServiceApplication.
 
 ## Endpoints
 
 ### 1. GET `http://localhost:8080/customer/`
-- Retrieve the list of all customers.
+- Recupera la lista de todos los clientes.
 ### 2. GET `http://localhost:8080/customer/{id}`
-- Retrieve a single customer by their ID.
+- Recupera un cliente específico por su ID.
 ### 3. POST `http://localhost:8080/customer/`
-- Create a new customer.
+- Crea un nuevo customer.
 ### 4. PUT `http://localhost:8080/customer/{id}`
-- Update an existing customer.
+- Actualiza un customer existente.
 ### 5. DELETE `http://localhost:8080/customer/{id}`
-- Delete a customer by their ID.
+- Elimina un cliente por su ID.
