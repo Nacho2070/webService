@@ -29,7 +29,6 @@
 ### 3. POST `http://localhost:8080/customer/`
  ```json
     {
-      "id": 1,
       "name": "Example",
       "email": "example@gmail.com",
       "phoneNumber": 123456789
