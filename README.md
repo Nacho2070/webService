@@ -27,7 +27,16 @@
 ### 2. GET `http://localhost:8080/customer/{id}`
 - Recupera un cliente específico por su ID.
 ### 3. POST `http://localhost:8080/customer/`
+ ```json
+    {
+      "id": 1,
+      "name": "Example",
+      "email": "example@gmail.com",
+      "phoneNumber": 123456789
+    }
+```
 - Crea un nuevo customer.
+
 ### 4. PUT `http://localhost:8080/customer/{id}`
 - Actualiza un customer existente.
 ### 5. DELETE `http://localhost:8080/customer/{id}`
